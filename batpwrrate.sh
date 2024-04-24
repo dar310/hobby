@@ -3,7 +3,6 @@ clear
 ctr=1
 prev=0
 cur=0
-time=0
 while : ; do
     status="$(cat /sys/class/power_supply/BAT1/status)"
     if [[ $status = 'Discharging' ]]; then
